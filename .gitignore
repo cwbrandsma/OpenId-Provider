@@ -1,6 +1,87 @@
-# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
-bin
-obj
+# .gitignore for .NET projects
+# Thanks to Derick Bailey
+# http://www.lostechies.com/blogs/derickbailey/archive/2009/05/18/a-net-c-developer-s-gitignore-file.aspx
+# Additional Thanks to 
+# - Alexey Abramov
 
-# mstest test results
-TestResults
+#VIM TEMP FILES
+*~
+*.orig
+# Standard VS.NET and ReSharper Foo
+[Oo]bj
+[Bb]in
+*.csproj.user
+*ReSharper*
+*resharper*
+*.suo
+*.xap
+_cache
+_cache/*
+logs
+*.svclog
+*.dbproj.user
+*.DotSettings.user
+
+# Build noise
+ClientBin
+Generated_Code
+/Build/configs
+/Build/results
+/Build/packages
+/Build/TestResult.xml
+/packages
+!/packages/repositories.config
+
+#Symlinks
+src/jlog/UnityMG.jLogEnterprise.Manager/Scripts/re-dev/
+src/wb/UnityMG.WonderBar.Manager/Scripts/re-dev/
+#JLog Uploads
+src/jlog/UnityMG.jLogEnterprise.Manager/Uploads/*
+#Generated Less
+src/aae/UnityMG.AskAnExpert.Client/Shared/
+src/aae/UnityMG.AskAnExpert.Manager/Shared/
+src/jlog/UnityMG.jLogEnterprise.Client/Shared/
+src/jlog/UnityMG.jLogEnterprise.Manager/Shared/
+src/re/UnityMG.FeedbackEngine.Web/Shared/
+src/re/UnityMG.ResponseEngine.Areas/Shared/
+src/ums/UnityMG.Module.MyAccount/Areas/MyAccount/Content/Shared/
+src/ums/UnityMG.Module.MyAccount/Shared/
+src/ums/UnityMG.Module.CMA/Content/Shared/
+src/ums/UnityMG.Portal/Shared/
+src/ums/UnityMG.UMS.STS/Shared/
+src/wb/UnityMG.WonderBar.Client/Shared/
+src/wb/UnityMG.WonderBar.Manager/Shared/
+
+# Generated Css
+src/ums/UnityMG.Portal/Content/css/umg-portal-manager.css
+src/re/UnityMG.FeedbackEngine.Web/Content/css/umg-re-standalone.css
+src/re/UnityMG.ResponseEngine.Areas/ContentClient/css/umg-re-client.css
+src/re/UnityMG.ResponseEngine.Areas/ContentManager/css/umg-re-manager.css
+src/re/UnityMG.ResponseEngine.Areas/ContentManager/css/rebrowser.css
+src/re/UnityMG.ResponseEngine.Areas/ContentManager/less/*.css
+src/aae/UnityMG.AskAnExpert.Client/Content/Css/umg-aae-client.css
+src/aae/UnityMG.AskAnExpert.Manager/Content/Css/umg-aae-manager.css
+src/jlog/UnityMG.jLogEnterprise.Client/Content/css/screen.css
+src/jlog/UnityMG.jLogEnterprise.Manager/Content/css/screen.css
+src/jlog/UnityMG.jLogEnterprise.Manager/Content/css/accordion.css
+src/jlog/UnityMG.jLogEnterprise.Manager/Content/css/unityCore.css
+src/jlog/UnityMG.jLogEnterprise.Manager/Content/less/*.css
+src/markup/shared/less/*.css
+src/wb/UnityMG.WonderBar.Client/Content/css/Desktop.css
+src/wb/UnityMG.WonderBar.Client/Content/css/Home.css
+src/wb/UnityMG.Wonderbar.Client/Content/css/Site.css
+src/wb/UnityMG.Wonderbar.Manager/Content/css/screen.css
+src/wb/UnityMG.Wonderbar.Manager/Content/less/*.css
+src/ums/UnityMG.Module.MyAccount/Areas/MyAccount/Content/Styles/myaccount.screen.css
+src/ums/UnityMG.UMS.STS/Content/css/screen.css
+src/ums/UnityMG.Module.CMA/Content/Styles/cma.screen.css
+src/ums/UnityMG.Module.CMA/Content/less/*.css
+src/ums/UnityMG.Module.CMA/Content/cma.css
+src/re/UnityMG.ResponseEngine.Areas/ContentClient/css/umg-re-client.custom.hra.css
+
+src/scheduler/UnitySchedulerService/Debug
+src/scheduler/build
+
+
+# Database
+src/db/Scripts/Post-Deployment/Script.PostDeployment.sql
